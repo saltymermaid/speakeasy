@@ -13,17 +13,23 @@ function DrillPage() {
 
   useEffect(() => {
     setSubcategories(Object.keys(wordsData[majorCategory][category]));
-  }, [majorCategory, category]);
+    if (selectedSubcategory) {
+      const words = wordsData[majorCategory][category][selectedSubcategory];
+      const shuffled = [...words].sort(() => 0.5 - Math.random());
+      setCurrentWords(shuffled.slice(0, cardCount));
+    }
+  }, [majorCategory, category, cardCount, selectedSubcategory]);
 
   const selectSubcategory = (subcat) => {
     setSelectedSubcategory(subcat);
     const words = wordsData[majorCategory][category][subcat];
-    setCurrentWords(words.slice(0, cardCount));
+    const shuffled = [...words].sort(() => 0.5 - Math.random());
+    setCurrentWords(shuffled.slice(0, cardCount));
   };
 
   const shuffleWords = () => {
     const allWords = subcategories.flatMap(subcat => wordsData[majorCategory][category][subcat]);
-    const shuffled = allWords.sort(() => 0.5 - Math.random());
+    const shuffled = [...allWords].sort(() => 0.5 - Math.random());
     setCurrentWords(shuffled.slice(0, cardCount));
   };
 
