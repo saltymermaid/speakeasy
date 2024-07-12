@@ -79,6 +79,24 @@
       "gy = J": ["allergy", "clergy", "edgy", "Egypt", "energy", "gym", "gymnastic", "gypsy", "lethargy", "prodigy", "trilogy"],
       "g = g": ["gab", "gallop", "gallon", "glass", "globe", "glow", "glue", "go", "gobble", "goat", "grass", "green", "lag", "frog"]
     }
+  },
+  "Ng, nk and gh": {
+    "ng": {
+      "ing": ["bing", "bring", "bringing", "cling", "ding", "fling", "king", "ping", "ring", "sing", "sling", "spring", "string", "swing", "swinging", "thing", "wing", "wring", "zing"],
+      "ung": ["bung", "clung", "flung", "hung", "lung", "rung", "slung", "sprung", "strung", "stung", "sung", "swung", "wrung"],
+      "ang": ["angelfish", "anger", "angle", "angler", "angry", "bang", "clang", "fang", "gang", "hang", "pang", "rang", "sang", "slang", "sprang", "tang", "twang"],
+      "ong": ["along", "belong", "daylong", "gong", "long", "prong", "song", "strong", "tong", "wrong"]
+    },
+    "nk": {
+      "onk": ["conk", "donkey", "honk", "monk", "monkey", "plonk", "Tonka", "wonk", "wonky", "zonk"],
+      "ank": ["bank", "banker", "banking", "blank", "blanket", "clank", "crank", "dank", "drank", "flank", "frank", "hank", "lank", "plank", "prank", "rank", "sank", "spank", "stank", "tank", "tanker", "thank", "thanks", "yank"],
+      "ink": ["blink", "brink", "clink", "drink", "drinker", "link", "mink", "pin", "rink", "shrink", "sinker", "slink", "stink", "think", "thinker", "tinker", "uplink", "wink"],
+      "unk": ["bunk", "bunks", "chunk", "chunky", "drunk", "dunk", "dunking", "flunk", "hunk", "junk", "plunk", "punk", "shrunk", "skunk", "slunk", "spunk", "splunk", "stunk", "sunk", "trunk", "unkind"]
+    },
+    "gh": {
+      "eigh": ["eight", "eighteen", "eighth", "eighty", "neigh", "neighbor", "overweight", "sleigh", "weigh", "weight", "weights"],
+      "igh": ["blight", "bright", "eighteen", "flight", "fright", "high", "knight", "light", "might", "nigh", "night", "overweight", "plight", "right", "sigh", "sight", "slight", "thigh", "tight", "weight"],
+      "ugh": ["aught", "bought", "caught", "cough", "fraught", "fought", "naught", "rough", "sought", "taught", "thought", "tough", "touch"]
+    }
   }
 }
-
