@@ -8,7 +8,7 @@ function LandingPage() {
     <div className={`${styles.landing} container`}>
       <h1 className={styles.title}>SpeakEasy</h1>
       <Link to="/categories">
-        <img src="/path-to-your-image.jpg" alt="SpeakEasy" className={styles.image} />
+        <img src="/door.jpeg" alt="SpeakEasy" className={styles.image} />
       </Link>
     </div>
   );

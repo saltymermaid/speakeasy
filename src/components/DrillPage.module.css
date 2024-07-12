@@ -1,4 +1,10 @@
-/* src/components/DrillPage.module.css */
+/* DrillPage.module.css */
+.pageTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .drillContainer {
   display: flex;
   gap: 30px;
@@ -24,6 +30,11 @@
 .shuffleButton {
   width: 100%;
   margin-bottom: 10px;
+  background-color: #5d88a3;
+}
+
+.shuffleButton:hover {
+  background-color: #3e5b6e;
 }
 
 .cardCountSelect {
@@ -35,34 +46,67 @@
 }
 
 .content {
-  width: 70%;
+  width: 75%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
 }
 
 .wordCard {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: calc(50% - 10px);
+  box-sizing: border-box;
 }
 
 .wordText {
-  font-size: 24px;
+  font-size: 44px;
+  margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.correctButton, .incorrectButton {
+  width: 45%;
+  padding: 10px 20px;
+  font-size: 18px;
 }
 
 .correctButton {
-  background-color: #4CAF50;
+  background-color: #739e73;
+}
+
+.correctButton:hover {
+  background-color: #4d6b4d;
 }
 
 .incorrectButton {
-  background-color: #f44336;
+  background-color: #c45248;
+}
+
+.incorrectButton:hover {
+  background-color: #8e3a32;
+}
+
+.tableContainer {
+  width: 50%;
+  margin: 30px auto;
 }
 
 .resultsTable {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 30px;
 }
 
 .resultsTable th, .resultsTable td {
@@ -72,10 +116,26 @@
 }
 
 .resultsTable th {
-  background-color: #4CAF50;
+  background-color: #739e73;
   color: white;
 }
 
 .resultsTable tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+}
+
+.emptyState p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
 }

@@ -30,7 +30,7 @@ function DrillPage() {
   const markWord = (word, correct) => {
     setResults(prev => {
       const subcat = subcategories.find(sub => wordsData[majorCategory][category][sub].includes(word));
-      const key = `${majorCategory}-${category}-${subcat}-${word}`;
+      const key = `${majorCategory}*${category}*${subcat}*${word}`;
       const current = prev[key] || { correct: 0, incorrect: 0 };
       return {
         ...prev,
@@ -44,7 +44,7 @@ function DrillPage() {
 
   return (
     <div className="container">
-      <h2>{category}</h2>
+      <h1 className={styles.pageTitle}>{majorCategory} | {category}</h1>
       <div className={styles.drillContainer}>
         <div className={styles.sidebar}>
           {subcategories.map(subcat => (
@@ -70,42 +70,52 @@ function DrillPage() {
           </div>
         </div>
         <div className={styles.content}>
-          {currentWords.map(word => (
-            <div key={word} className={styles.wordCard}>
-              <h3 className={styles.wordText}>{word}</h3>
-              <button className={styles.correctButton} onClick={() => markWord(word, true)}>✓</button>
-              <button className={styles.incorrectButton} onClick={() => markWord(word, false)}>✗</button>
+          {currentWords.length > 0 ? (
+            <div className={styles.cardContainer}>
+              {currentWords.map(word => (
+                <div key={word} className={styles.wordCard}>
+                  <h3 className={styles.wordText}>{word}</h3>
+                  <div className={styles.buttonContainer}>
+                    <button className={styles.correctButton} onClick={() => markWord(word, true)}>✓</button>
+                    <button className={styles.incorrectButton} onClick={() => markWord(word, false)}>✗</button>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          ) : (
+            <div className={styles.emptyState}>
+              <p>Click on a subcategory on the left to start your drill!</p>
+            </div>
+          )}
         </div>
       </div>
-      <table className={styles.resultsTable}>
-        <thead>
-          <tr>
-            <th>Word</th>
-            <th>Major Category</th>
-            <th>Category</th>
-            <th>Subcategory</th>
-            <th>Correct</th>
-            <th>Incorrect</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Object.entries(results).map(([key, result]) => {
-            const [majorCat, cat, subcat, word] = key.split('-');
-            return (
-              <tr key={key}>
-                <td>{word}</td>
-                <td>{majorCat}</td>
-                <td>{cat}</td>
-                <td>{subcat}</td>
-                <td>{result.correct}</td>
-                <td>{result.incorrect}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <div className={styles.tableContainer}>
+        <table className={styles.resultsTable}>
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Major Category</th>
+              <th>Subcategory</th>
+              <th>Correct</th>
+              <th>Incorrect</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(results).map(([key, result]) => {
+              const [majorCat, _cat, subcat, word] = key.split('*');
+              return (
+                <tr key={key}>
+                  <td>{word}</td>
+                  <td>{majorCat}</td>
+                  <td>{subcat}</td>
+                  <td>{result.correct}</td>
+                  <td>{result.incorrect}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
