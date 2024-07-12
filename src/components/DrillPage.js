@@ -10,6 +10,7 @@ function DrillPage() {
   const [cardCount, setCardCount] = useState(2);
   const [currentWords, setCurrentWords] = useState([]);
   const [results, setResults] = useState({});
+  const [markedWords, setMarkedWords] = useState({});
 
   useEffect(() => {
     setSubcategories(Object.keys(wordsData[majorCategory][category]));
@@ -25,15 +26,18 @@ function DrillPage() {
     const words = wordsData[majorCategory][category][subcat];
     const shuffled = [...words].sort(() => 0.5 - Math.random());
     setCurrentWords(shuffled.slice(0, cardCount));
+    setMarkedWords({}); // Reset marked words
   };
-
+  
   const shuffleWords = () => {
     const allWords = subcategories.flatMap(subcat => wordsData[majorCategory][category][subcat]);
     const shuffled = [...allWords].sort(() => 0.5 - Math.random());
     setCurrentWords(shuffled.slice(0, cardCount));
+    setMarkedWords({}); // Reset marked words
   };
 
   const markWord = (word, correct) => {
+    setMarkedWords(prev => ({ ...prev, [word]: true }));
     setResults(prev => {
       const subcat = subcategories.find(sub => wordsData[majorCategory][category][sub].includes(word));
       const key = `${majorCategory}*${category}*${subcat}*${word}`;
@@ -82,8 +86,20 @@ function DrillPage() {
                 <div key={word} className={styles.wordCard}>
                   <h3 className={styles.wordText}>{word}</h3>
                   <div className={styles.buttonContainer}>
-                    <button className={styles.correctButton} onClick={() => markWord(word, true)}>✓</button>
-                    <button className={styles.incorrectButton} onClick={() => markWord(word, false)}>✗</button>
+                    <button 
+                      className={styles.correctButton} 
+                      onClick={() => markWord(word, true)}
+                      disabled={markedWords[word]}
+                    >
+                      ✓
+                    </button>
+                    <button 
+                      className={styles.incorrectButton} 
+                      onClick={() => markWord(word, false)}
+                      disabled={markedWords[word]}
+                    >
+                      ✗
+                    </button>
                   </div>
                 </div>
               ))}

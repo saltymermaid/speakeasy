@@ -83,6 +83,12 @@
   font-size: 18px;
 }
 
+.correctButton:disabled,
+.incorrectButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .correctButton {
   background-color: #739e73;
 }
