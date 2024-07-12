@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/speakeasy/static/css/main.73e31930.css",
+    "main.js": "/speakeasy/static/js/main.3e023a44.js",
+    "index.html": "/speakeasy/index.html",
+    "main.73e31930.css.map": "/speakeasy/static/css/main.73e31930.css.map",
+    "main.3e023a44.js.map": "/speakeasy/static/js/main.3e023a44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73e31930.css",
+    "static/js/main.3e023a44.js"
+  ]
+}
