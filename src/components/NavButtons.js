@@ -11,7 +11,10 @@ function NavButtons() {
   const goHome = () => navigate('/categories');
   const goBack = () => navigate(-1);
 
-  const showHomeButton = location.pathname !== '/categories' && location.pathname !== '/';
+  const basePath = window.location.pathname.split('/')[1];
+  const adjustedPathname = `/${basePath}`;
+
+  const showHomeButton = location.pathname !== `${adjustedPathname}/categories` && location.pathname !== adjustedPathname && location.pathname !== '/';
   const showBackButton = location.pathname.startsWith('/drill/');
 
   return (
