@@ -27,7 +27,7 @@
   },
   "Non-phonetic Words": {
     "Silent Letters": {
-      "Silent B": ["bomb",  "comb", "crumb", "lamb", "limb", "limb", "numb", "plumber", "thumb"],
+      "Silent B": ["bomb", "comb", "crumb", "lamb", "limb", "limb", "numb", "plumber", "thumb"],
       "Silent G": ["assign", "design", "gnat", "gnome", "reign", "sign"],
       "Silent H": ["ghost", "hour", "rhyme", "school", "white"],
       "Silent L": ["calf", "calm", "half", "talk", "yolk"],
@@ -35,36 +35,49 @@
       "Silent T": ["castle", "listen", "often", "whistle"]
     },
     "Other": {
-      "au words": ["haul", "taut", "fraud", "cause", "pause", "fault", "vault", "daunting", "gaunt", "haunt", "jaunt", "launch", "paunch", "staunch", "August"]
+      "au words": ["August", "cause", "daunting", "fault", "fraud", "gaunt", "haunt", "haul", "jaunt", "launch", "pause", "paunch", "staunch", "taut", "vault"]
     }
   },
   "Blends": {
     "L Blends": {
-      "bl": ["black", "blue", "bleed"],
-      "cl": ["clean", "class", "clock"],
-      "fl": ["flag", "fly", "flip"],
-      "gl": ["glad", "glass", "glow"],
-      "pl": ["play", "plan", "plate"],
-      "sl": ["slip", "slide", "sleep"]
+      "bl": ["black", "bleed", "blue"],
+      "cl": ["class", "clean", "clock"],
+      "fl": ["flag", "flip", "fly"],
+      "gl": ["glass", "glad", "glow"],
+      "pl": ["plan", "plate", "play"],
+      "sl": ["sleep", "slide", "slip"]
     },
     "R Blends": {
-      "br": ["brick", "brave", "bring"],
-      "cr": ["crab", "crack", "crime"],
-      "dr": ["dress", "drum", "drop"],
-      "fr": ["from", "frog", "frame"],
-      "gr": ["gray", "grass", "green"],
-      "tr": ["trip", "tree", "train"]
+      "br": ["brave", "brick", "bring"],
+      "cr": ["crab", "crime", "crack"],
+      "dr": ["drum", "dress", "drop"],
+      "fr": ["frog", "frame", "from"],
+      "gr": ["grass", "gray", "green"],
+      "tr": ["train", "tree", "trip"]
     },
     "Other Blends": {
-      "scr": ["scroll", "scrub", "scream"],
-      "sm": ["smack", "small", "smile"],
-      "sn": ["snake", "snap", "snore"],
-      "sp": ["spot", "spin", "spell"],
-      "st": ["stop", "stand", "still"],
-      "str": ["string", "street", "strike"],
-      "sw": ["swim", "swift", "sweet"],
-      "thr": ["thrive", "throb", "throw"],
-      "tw": ["twin", "twine", "twig"]
+      "scr": ["scream", "scroll", "scrub"],
+      "sm": ["smack", "smile", "small"],
+      "sn": ["snake", "snore", "snap"],
+      "sp": ["spell", "spin", "spot"],
+      "st": ["stand", "still", "stop"],
+      "str": ["strike", "street", "string"],
+      "sw": ["sweet", "swift", "swim"],
+      "thr": ["throw", "thrive", "throb"],
+      "tw": ["twig", "twin", "twine"]
+    }
+  },
+  "c and g with vowels": {
+    "ce ci cy": {
+      "ce": ["accept", "ace", "advance", "biceps", "brace", "cancel", "cemetery", "celebrate", "cellar", "center", "census", "chance", "convince", "dance", "distance", "embrace", "excel", "face", "grace", "grocery", "innocence", "instance", "intercept", "introduce", "juice", "license", "mice", "notice", "ocean", "pace", "princess", "prudence", "race", "recent", "recess", "residence", "resistance", "rhinoceros", "romance", "sentence", "service", "silence", "space", "succeed", "success", "tolerance", "trace", "trance", "truce", "twice", "vice", "voice"],
+      "ci": ["accident", "acid", "calcium", "cinnamon", "circus", "circulate", "circuit", "city", "civil", "concise", "council", "decision", "excite", "exercise", "icicle", "lucid", "merciful", "pencil", "racism", "racing", "rancid", "recites", "science", "scissors", "specific", "stencil", "vaccinate"],
+      "cy": ["Nancy", "decency", "democracy", "fancy", "lacy", "Lucy", "mercy", "policy", "privacy", "spicy", "vacancy"]
+    },
+    "ge gi gy g": {
+      "ge = J": ["age", "bridge", "budget", "cage", "change", "danger", "dodge", "edge", "emergency", "fidget", "gem", "general", "gentle", "germ", "genius", "huge", "legend", "page", "range", "urgent", "wage"],
+      "gi = J": ["agile", "allergic", "apologize", "eligible", "fragile", "giant", "gigantic", "logic", "margin", "original", "region", "religion", "tragic"],
+      "gy = J": ["allergy", "clergy", "edgy", "Egypt", "energy", "gym", "gymnastic", "gypsy", "lethargy", "prodigy", "trilogy"],
+      "g = g": ["gab", "gallop", "gallon", "glass", "globe", "glow", "glue", "go", "gobble", "goat", "grass", "green", "lag", "frog"]
     }
   }
 }
