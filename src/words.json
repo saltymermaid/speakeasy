@@ -1,0 +1,42 @@
+{ 
+  "Long and Short Vowels": {
+    "a": {
+      "a": ["ad", "an", "ap", "at", "bad", "bat", "can", "cap", "cat", "dad", "fan", "fat", "had", "hat", "lad", "lap", "man", "map", "pan", "pap", "ran", "sad", "sat", "tap"],
+      "ai": ["aid", "ail", "bail", "fail", "hail", "laid", "maid", "mail", "nail", "paid", "pail", "raid", "rail", "sail", "tail", "wail"],
+      "ay": ["away", "bay", "clay", "day", "fay", "hay", "lay", "may", "nay", "pay", "play", "ray", "stay", "way"],
+      "a_e": ["ate", "bake", "brake", "cade", "fade", "fate", "make", "quake", "rake", "rate", "sake", "shake", "snake", "stake", "take", "wake"]
+    },
+    "e": {
+      "e": ["bed", "den", "ed", "en", "et", "fed", "get", "led", "let", "men", "met", "net", "ped", "pen", "pet", "red", "Ted", "ten", "when"],
+      "ee": ["bee", "deep", "feed", "feet", "green", "heel", "keep", "peek", "see", "seek", "seep", "wee", "week", "weep"],
+      "ea": ["deal", "dear", "ear", "fear", "feat", "heal", "hear", "meal", "meat", "near", "neat", "peal", "seal"]
+    },
+    "i": {
+      "i": ["bit", "din", "fill", "fin", "fit", "hill", "hip", "hit", "ill", "in", "it", "lip", "lit", "pill", "pin", "pip", "sill", "sit", "tin", "tip", "will", "win"],
+      "i_e": ["dime", "fine", "five", "hide", "like", "lime", "mime", "mine", "pine", "ride", "side", "time", "wide", "wife"]
+    },
+    "o": {
+      "o": ["Bob", "cob", "cop", "dog", "fog", "gob", "got", "hog", "hop", "hot", "job", "lob", "log", "lot", "mob", "not", "ob", "og", "op", "ot", "pop", "rob", "top"],
+      "oa": ["boat", "coat", "foam", "goal", "goat", "load", "loaf", "oak", "oat", "oath", "road", "soak", "soap", "toad", "toast"],
+      "o_e": ["bone", "hole", "home", "hope", "hose", "joke", "lone", "lose", "note", "pone", "pose", "rode", "rope", "tone", "vote", "zone"]
+    },
+    "u": {
+      "u": ["bug", "bum", "but", "cut", "dug", "fun", "gum", "gun", "hug", "hum", "lug", "nut", "rug", "run", "rut", "sum", "sun", "tum", "tut", "ug", "um", "un", "ut"],
+      "u_e": ["cube", "cute", "dude", "fume", "fuse", "June", "Luke", "mule", "mute", "pure", "rude", "rule", "tube", "tune", "use"]
+    }
+  },
+  "Non-phonetic Words": {
+    "Silent Letters": {
+      "Silent B": ["bomb",  "comb", "crumb", "lamb", "limb", "limb", "numb", "plumber", "thumb"],
+      "Silent G": ["assign", "design", "gnat", "gnome", "reign", "sign"],
+      "Silent H": ["ghost", "hour", "rhyme", "school", "white"],
+      "Silent L": ["calf", "calm", "half", "talk", "yolk"],
+      "Silent S": ["island"],
+      "Silent T": ["castle", "listen", "often", "whistle"]
+    },
+    "Other": {
+      "au words": ["haul", "taut", "fraud", "cause", "pause", "fault", "vault", "daunting", "gaunt", "haunt", "jaunt", "launch", "paunch", "staunch", "August"]
+    }
+  }
+}
+

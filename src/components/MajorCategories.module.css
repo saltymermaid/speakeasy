@@ -1,0 +1,12 @@
+/* src/components/MajorCategories.module.css */
+.categoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categoryButton {
+  font-size: 18px;
+  padding: 15px 25px;
+}

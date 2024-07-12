@@ -1,0 +1,10 @@
+/* src/components/Categories.module.css */
+.categoriesContainer {
+  text-align: center;
+}
+
+.categoryTitle {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
