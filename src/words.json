@@ -37,6 +37,35 @@
     "Other": {
       "au words": ["haul", "taut", "fraud", "cause", "pause", "fault", "vault", "daunting", "gaunt", "haunt", "jaunt", "launch", "paunch", "staunch", "August"]
     }
+  },
+  "Blends": {
+    "L Blends": {
+      "bl": ["black", "blue", "bleed"],
+      "cl": ["clean", "class", "clock"],
+      "fl": ["flag", "fly", "flip"],
+      "gl": ["glad", "glass", "glow"],
+      "pl": ["play", "plan", "plate"],
+      "sl": ["slip", "slide", "sleep"]
+    },
+    "R Blends": {
+      "br": ["brick", "brave", "bring"],
+      "cr": ["crab", "crack", "crime"],
+      "dr": ["dress", "drum", "drop"],
+      "fr": ["from", "frog", "frame"],
+      "gr": ["gray", "grass", "green"],
+      "tr": ["trip", "tree", "train"]
+    },
+    "Other Blends": {
+      "scr": ["scroll", "scrub", "scream"],
+      "sm": ["smack", "small", "smile"],
+      "sn": ["snake", "snap", "snore"],
+      "sp": ["spot", "spin", "spell"],
+      "st": ["stop", "stand", "still"],
+      "str": ["string", "street", "strike"],
+      "sw": ["swim", "swift", "sweet"],
+      "thr": ["thrive", "throb", "throw"],
+      "tw": ["twin", "twine", "twig"]
+    }
   }
 }
 

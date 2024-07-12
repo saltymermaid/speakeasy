@@ -9,11 +9,19 @@ function DrillPage() {
   const category = decodeURIComponent(encodedCategory);
   const [subcategories, setSubcategories] = useState([]);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
-  const [cardCount, setCardCount] = useState(2);
   const [currentWords, setCurrentWords] = useState([]);
   const [results, setResults] = useState({});
   const [markedWords, setMarkedWords] = useState({});
-
+  
+  const getDefaultCardCount = (category) => {
+    if (category === "Blends") {
+      return 3;
+    }
+    return 2;
+  };
+  
+  const [cardCount, setCardCount] = useState(() => getDefaultCardCount(majorCategory));
+  
   useEffect(() => {
     setSubcategories(Object.keys(wordsData[majorCategory][category]));
     if (selectedSubcategory) {
@@ -59,6 +67,15 @@ function DrillPage() {
       <h1 className={styles.pageTitle}>{majorCategory} | {category}</h1>
       <div className={styles.drillContainer}>
         <div className={styles.sidebar}>
+          <select 
+            value={cardCount} 
+            onChange={(e) => setCardCount(Number(e.target.value))}
+            className={styles.cardCountSelect}
+          >
+            {[1, 2, 3].map(num => (
+              <option key={num} value={num}>{num} Card{num !== 1 ? 's' : ''}</option>
+            ))}
+          </select>
           {subcategories.map(subcat => (
             <button 
               key={subcat} 
@@ -70,15 +87,6 @@ function DrillPage() {
           ))}
           <div className={styles.controlsContainer}>
             <button onClick={shuffleWords} className={styles.shuffleButton}>Shuffle</button>
-            <select 
-              value={cardCount} 
-              onChange={(e) => setCardCount(Number(e.target.value))}
-              className={styles.cardCountSelect}
-            >
-              {[1, 2, 3].map(num => (
-                <option key={num} value={num}>{num} Card{num !== 1 ? 's' : ''}</option>
-              ))}
-            </select>
           </div>
         </div>
         <div className={styles.content}>
