@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/speakeasy/static/css/main.95533759.css",
-    "main.js": "/speakeasy/static/js/main.7cc3e552.js",
+    "main.js": "/speakeasy/static/js/main.2a8689b9.js",
     "static/media/door.jpeg": "/speakeasy/static/media/door.e721adee43162ea4df3b.jpeg",
     "index.html": "/speakeasy/index.html",
     "main.95533759.css.map": "/speakeasy/static/css/main.95533759.css.map",
-    "main.7cc3e552.js.map": "/speakeasy/static/js/main.7cc3e552.js.map"
+    "main.2a8689b9.js.map": "/speakeasy/static/js/main.2a8689b9.js.map"
   },
   "entrypoints": [
     "static/css/main.95533759.css",
-    "static/js/main.7cc3e552.js"
+    "static/js/main.2a8689b9.js"
   ]
 }
