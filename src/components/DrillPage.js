@@ -4,7 +4,9 @@ import wordsData from '../words.json';
 import styles from './DrillPage.module.css';
 
 function DrillPage() {
-  const { majorCategory, category } = useParams();
+  const { majorCategory: encodedMajorCategory, category: encodedCategory } = useParams();
+  const majorCategory = decodeURIComponent(encodedMajorCategory);
+  const category = decodeURIComponent(encodedCategory);
   const [subcategories, setSubcategories] = useState([]);
   const [selectedSubcategory, setSelectedSubcategory] = useState(null);
   const [cardCount, setCardCount] = useState(2);

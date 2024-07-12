@@ -4,11 +4,13 @@ import LandingPage from './components/LandingPage';
 import MajorCategories from './components/MajorCategories';
 import Categories from './components/Categories';
 import DrillPage from './components/DrillPage';
+import NavButtons from './components/NavButtons';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <NavButtons />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/categories" element={<MajorCategories />} />

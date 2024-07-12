@@ -10,3 +10,13 @@
   font-size: 18px;
   padding: 15px 25px;
 }
+
+.majorCategoriesTitle {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.majorCategoriesContainer {
+  text-align: center;
+}

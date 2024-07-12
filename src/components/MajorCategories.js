@@ -6,8 +6,8 @@ import styles from './MajorCategories.module.css';
 
 function MajorCategories() {
   return (
-    <div className="container">
-      <h2>Major Categories</h2>
+    <div className={`${styles.majorCategoriesContainer} container`}>
+      <h2 className={styles.majorCategoriesTitle}>Major Categories</h2>
       <div className={styles.categoriesList}>
         {Object.keys(wordsData).map((category) => (
           <Link key={category} to={`/categories/${category}`}>

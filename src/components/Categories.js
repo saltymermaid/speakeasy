@@ -1,4 +1,3 @@
-// src/components/Categories.js
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import wordsData from '../words.json';
@@ -11,7 +10,7 @@ function Categories() {
     <div className={`${styles.categoriesContainer} container`}>
       <h2 className={styles.categoryTitle}>{majorCategory}</h2>
       {Object.keys(wordsData[majorCategory]).map((category) => (
-        <Link key={category} to={`/drill/${majorCategory}/${category}`}>
+        <Link key={category} to={`/drill/${encodeURIComponent(majorCategory)}/${encodeURIComponent(category)}`}>
           <button>{category}</button>
         </Link>
       ))}
