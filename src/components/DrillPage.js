@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import wordsData from '../words.json';
 import styles from './DrillPage.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRefresh } from '@fortawesome/free-solid-svg-icons';
 
 function DrillPage() {
   const { majorCategory: encodedMajorCategory, category: encodedCategory } = useParams();
@@ -139,7 +141,12 @@ function DrillPage() {
                 <tr key={key}>
                   <td>{word}</td>
                   <td>{majorCat}</td>
-                  <td>{subcat}</td>
+                  <td onClick={() => selectSubcategory(subcat)} className={styles.subCat}>
+                    {subcat}
+                    <button className={styles.refreshButton}>
+                      <FontAwesomeIcon icon={faRefresh} />
+                    </button>
+                  </td>
                   <td>{result.correct}</td>
                   <td>{result.incorrect}</td>
                 </tr>

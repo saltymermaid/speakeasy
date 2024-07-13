@@ -118,17 +118,21 @@
 
 .resultsTable th, .resultsTable td {
   border: 1px solid #ddd;
-  padding: 12px;
   text-align: left;
 }
 
 .resultsTable th {
   background-color: #739e73;
   color: white;
+  padding: 12px;
+}
+
+.resultsTable td {
+  padding: 0px 8px;
 }
 
 .resultsTable tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #d9ddd9;
 }
 
 .emptyState {
@@ -145,4 +149,28 @@
   font-size: 18px;
   color: #666;
   text-align: center;
+}
+
+.refreshButton {
+  background-color: #739e73;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subCat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.refreshButton:hover {
+  background-color: #4d6b4d;
 }
