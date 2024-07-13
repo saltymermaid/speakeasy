@@ -35,7 +35,10 @@
       "Silent T": ["castle", "listen", "often", "whistle"]
     },
     "Other": {
-      "au words": ["August", "cause", "daunting", "fault", "fraud", "gaunt", "haunt", "haul", "jaunt", "launch", "pause", "paunch", "staunch", "taut", "vault"]
+      "au words": ["August", "cause", "daunting", "fault", "fraud", "gaunt", "haunt", "haul", "jaunt", "launch", "pause", "paunch", "staunch", "taut", "vault"],
+      "ou words": ["about", "aloud", "amount", "cloud", "cloudy", "flour", "found", "ground", "hound", "hour", "house", "loud", "noun", "out", "outdoor", "outfit", "outlet", "pound", "proud", "renounce", "round", "scout", "scrounge", "sound", "south", "spout", "takeout", "thousand", "without"],
+      "ph = f": ["dolphin", "graph", "microphone", "nephew", "orphan", "phantom", "pharmacy", "phase", "phone", "phonics", "physical", "physics", "photo", "sphere", "telephone"],
+      "kn = n": ["knead", "knee", "kneel", "knell", "knelt", "knew", "knife", "knight", "knit", "knob", "knock", "knoll", "knot", "know", "knowledge", "knuckle"]
     }
   },
   "Blends": {
@@ -90,7 +93,7 @@
     "nk": {
       "onk": ["conk", "donkey", "honk", "monk", "monkey", "plonk", "Tonka", "wonk", "wonky", "zonk"],
       "ank": ["bank", "banker", "banking", "blank", "blanket", "clank", "crank", "dank", "drank", "flank", "frank", "hank", "lank", "plank", "prank", "rank", "sank", "spank", "stank", "tank", "tanker", "thank", "thanks", "yank"],
-      "ink": ["blink", "brink", "clink", "drink", "drinker", "link", "mink", "pin", "rink", "shrink", "sinker", "slink", "stink", "think", "thinker", "tinker", "uplink", "wink"],
+      "ink": ["blink", "brink", "clink", "drink", "drinker", "link", "mink", "pin", "rink", "shrink", "sink", "sinker", "sinks", "slink", "stink", "think", "thinker", "tinker", "uplink", "wink"],
       "unk": ["bunk", "bunks", "chunk", "chunky", "drunk", "dunk", "dunking", "flunk", "hunk", "junk", "plunk", "punk", "shrunk", "skunk", "slunk", "spunk", "splunk", "stunk", "sunk", "trunk", "unkind"]
     },
     "gh": {
